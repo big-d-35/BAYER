@@ -1,0 +1,53 @@
+//FADEIN animation
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+//FADE IN animation
+
+//LEFT animation
+    @keyframes fromleft {
+      0% {
+        opacity: 0;
+        transform: translateX(-20px);
+      }
+
+      100% {
+          opacity: 1;
+        transform: translateX(0px);
+      }
+    }
+//LEFT animation
+
+//RIGHT animation
+    @keyframes fromrigth {
+      0% {
+          opacity: 0;
+        transform: translateX(20px);
+      }
+
+      100% {
+          opacity: 1;
+        transform: translateX(0px);
+      }
+    }
+//RIGHT animation
+
+//TOP animation
+    @keyframes fromtop {
+      0% {
+          opacity: 0;
+        transform: translateY(20px);
+      }
+
+      100% {
+          opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+//TOP animation
