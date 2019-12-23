@@ -25,6 +25,7 @@
 
     <!-- CSS STYLE ======================================================= -->
 
+    
 </head>
 
 <!-- HEAD END ========================================================================= -->
@@ -39,13 +40,13 @@
         <header class="header">
             <img src="image/Logo-header.png" alt="Logo" class="header__logo">
             <div class="header__links">
-                <a class="header__link" href="">спикеры</a>
-                <a class="header__link" href="">программа</a>
-                <a class="header__link" href="">специальный гость</a>
-                <a class="header__link" href="">информация</a>
-                <a class="header__link" href="">место проведения</a>
-                <a class="header__link" href="">экскурсии</a>
-                <a class="header__link" href="">контакты</a>
+                <a class="header__link" href="#speakers">спикеры</a>
+                <a class="header__link" href="#program">программа</a>
+                <a class="header__link" href="#guest">специальный гость</a>
+                <a class="header__link" href="#information">информация</a>
+                <a class="header__link" href="#place">место проведения</a>
+                <a class="header__link" href="#exc">экскурсии</a>
+                <a class="header__link" href="#contacts">контакты</a>
             </div>
             <div class="header__mobile">
                 <button class="header__button">. . .</button>
@@ -61,7 +62,7 @@
             </div>
         </header>
         <div class="blocks">
-            <img src="image/bckg1.png" alt="" class="block__bckg-right">
+            
             <img src="image/Logo-block.png" alt="" class="block__logo">
             <!-- ГЛАВНЫЙ ЭКРАН ============== -->
             <section class="block">
@@ -77,7 +78,7 @@
 
                 </div>
                 <div class="sponsor">
-                    <a href="" class="sponsor__link" target="_blank">
+                    <a href="https://www.bayer.ru/" class="sponsor__link" target="_blank">
 
                         <img src="image/sponsor-logo-white.png" alt="Sponsor logo" class="sponsor__logo-white">
                         <div class="sponsor__block">
@@ -105,18 +106,19 @@
                         </div>
                     </div>
                 </div>
-
+            
             </section>
             <!-- ГЛАВНЫЙ ЭКРАН ============== -->
+            <img src="image/bckg1.png" alt="" class="block__bckg-right " >
         </div>
-        <div class="blocks">
+        <div class="blocks" id="speakers">
             <!-- СПИКЕРЫ ============== -->
             <section class="block">
                 <p class="block__line-title2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                 <h2 class="block__title block__title-right">Спикеры</h2>
                 <div class="block__names">
                     <div class="names">
-                        <img src="image/Medvedev.jpg" alt="Photo Medvedev" class="names__photo">
+                        <img src="image/Medvedev.jpg" alt="Photo Medvedev" class="names__photo" id="glitch1">
                         <h3 class="names__title">Даниил<br>Медведев</h3>
                         <button class="button"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more">Биография</button>
                         <p class="names__text">Всё о трендах</p>
@@ -145,8 +147,8 @@
             </section>
             <!-- СПИКЕРЫ ============== -->
         </div>
-        <div class="blocks">
-            <img src="image/bckg2.png" alt="" class="block__bckg-left">
+        <div class="blocks" id="program">
+           
             <!-- ПРОГРАММА ============== -->
             <section class="block">
 
@@ -208,7 +210,7 @@
                                     <p class="programm__text">Центр Международной Торговли (ЦМТ) Дубая</p>
                                 </div>
                                 <div class="programm__info">
-                                    <h3 class="programm__titles"><img src="image/dods-icon.svg" alt="dods icon" class="programm__icon">Зал Sheikh Rashid</h3>
+                                    <h3 class="programm__titles"><a href="https://www.dwtc.com/en/contact" class="programm__icon-link" target="_blank"><img src="image/dods-icon.svg" alt="dods icon" class="programm__icon"></a>Зал Sheikh Rashid</h3>
                                     <p class="programm__about">от отеля Hilton будут организованы трансферы</p>
                                     <span class="programm__line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                                 </div>
@@ -219,7 +221,7 @@
                                     <p class="programm__text">Сбор гостей в 18:00</p>
                                 </div>
                                 <div class="programm__info">
-                                    <h3 class="programm__titles"><img src="image/dods-icon.svg" alt="dods icon" class="programm__icon">Habtoor Palace</h3>
+                                    <h3 class="programm__titles"><a href="https://www.guestreservations.com/the-westin-dubai-al-habtoor-city-2/booking?gclid=CjwKCAiAluLvBRASEiwAAbX3GebSqutyWJHjAaoWeOSikFIdeJYSAL7uKLWEdQge1skJdk5SckL6JxoCIAAQAvD_BwE" class="programm__icon-link" target="_blank"><img src="image/dods-icon.svg" alt="dods icon" class="programm__icon"></a>Habtoor Palace</h3>
                                     <p class="programm__about">в саду отеля перед центральным входом</p>
                                     <span class="programm__line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                                 </div>
@@ -551,8 +553,10 @@
                 </div>
             </section>
             <!-- ПРОГРАММА ============== -->
+             <img src="image/bckg2.png" alt="" class="block__bckg-left ">
         </div>
-        <div class="blocks">
+        <div class="blocks" id="guest">
+           
             <!-- ГОСТИ ============== -->
             <section class="block">
                 <h2 class="block__title block__title-right">Специальный гость</h2>
@@ -561,38 +565,49 @@
                     <div class="guest__block">
                         <div class="guest__info">
                             <p class="guest__text">— это перспективный, а главное, беспрецедентно уникальный проект, состоящий из авторов исполнителей Маши Зайцевой и Маши Шейх. Девушки громко заявили о себе с пронзительной песней БОСАЯ которая молниеносно стала расходиться по просторам социальных сетей и набрала уже более 188 миллионов просмотров на YouTube, не покидает топ-чарты Apple Music и получила престижную премию «Золотой Граммофон» на Русском радио.</p>
-                            <span class="guest__line"></span>
+                            <span class="guest__line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                         </div>
                         <div class="guest__names">
                             <img src="image/zaceva.jpg" alt="Маша Зайцева" class="guest__image">
-                            <h3 class="guest__name">Маша Зайцева</h3>
-                            <button class="button"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more">Подробнее</button>
+                            <h3 class="guest__name">Маша<br>Зайцева</h3>
+                            <button class="button guest-button-mobile"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more">Подробнее</button>
                         </div>
                     </div>
-                    <div class="guest__video">
+                    <div class="guest__video " id="Vbtpm23ucw4" >
 
+                <iframe
+                  width="663"
+                  height="300"
+                  src="https://www.youtube.com/embed/Vbtpm23ucw4"
+                  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/Vbtpm23ucw4?autoplay=1><img src=https://img.youtube.com/vi/Y8Wp3dafaMQ/hqdefault.jpg <span>▶</span></a>"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  title=""
+                ></iframe>
                     </div>
 
                     <div class="guest__block">
 
                         <div class="guest__names">
                             <img src="image/sheih.jpg" alt="Маша Шейх" class="guest__image">
-                            <h3 class="guest__name">Маша Шейх</h3>
-                            <button class="button"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more">Подробнее</button>
+                            <h3 class="guest__name">Маша<br>Шейх</h3>
+                            <button class="button guest-button-mobile"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more">Подробнее</button>
                         </div>
                         <div class="guest__info">
                             <p class="guest__text">Песня с последнего альбома «Мама, я танцую» спровоцировала в интернете настоящий флэшмоб с танцами под зажигательные ритмы, а клип был снят в Боснии и Герцеговине в лучших традициях настоящего кино в духе Эмира Кустурицы и набрал уже более 117 миллионов просмотров на Youtube.</p>
-                            <span class="guest__line"></span>
+                            <span class="guest__line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- ГОСТИ ============== -->
+            <img src="image/bckg3.png" alt="" class="block__bckg-right2">
         </div>
-        <div class="blocks">
+        <div class="blocks" id="information">
             <!-- INFORMATION ============== -->
             <section class="block">
-                <h2 class="block__title">ИНФОРМАЦИЯ</h2>
+                <h2 class="block__title">Информация</h2>
                 <div class="info">
                     <div class="info__texts">
                         <p class="info__text">Информация для участников о правилах отеля и ОАЭ.</p>
@@ -600,97 +615,114 @@
                     </div>
                     <div class="info__downloads">
                         <div class="info__download">
-                            <h3 class="info__name"><img src="image/pdf-icon.svg" alt="pdf icon" class="info__icon">Общая памятка.pdf</h3>
-                            <a class="button" href="" target="_blank"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more">Скачать</a>
+                           <img src="image/pdf-icon.svg" alt="pdf icon" class="info__icon">
+                            <div class="info__names">
+                               
+                                <h3 class="info__name">Общая памятка.pdf</h3>
+                                <a class="button" href="" target="_blank"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more">Скачать</a>
+                            </div>
+                            
                         </div>
                         <div class="info__download">
-                            <h3 class="info__name"><img src="image/pdf-icon.svg" alt="pdf icon" class="info__icon">Памятка по прибыванию в отеле.pdf</h3>
-                            <a class="button" href="" target="_blank"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more">Скачать</a>
+                          <img src="image/pdf-icon.svg" alt="pdf icon" class="info__icon">
+                           <div class="info__names">
+                              
+                               <h3 class="info__name">Памятка по прибыванию в отеле.pdf</h3>
+                               <a class="button" href="" target="_blank"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more">Скачать</a>
+                            </div>
+                            
                         </div>
-                        <span class="info__line"></span>
+                        <span class="info__line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                     </div>
                 </div>
             </section>
             <!-- INFORMATION ============== -->
         </div>
-        <div class="blocks">
+        <div class="blocks" id="place">
             <!-- PLACE ============== -->
             <section class="block">
-                <h2 class="block__title">Место проведения</h2>
+                <h2 class="block__title block__title-right">Место проведения</h2>
                 <div class="place">
                     <div class="place__adress">
                         <h4 class="place__city">Дубай</h4>
                         <h3 class="place__hotel">HILTON DUBAI AL HABTOOR CITY</h3>
-                        <a href="" class="place__phone">+971-4-437-33-33</a>
+                        <a href="tel:+97144373333" class="place__phone2">+971-4-437-33-33</a>
+                        <span class="place__line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                         <img src="image/map.png" alt="Map" class="place__map">
-                    </div>
-                    <div class="place__info">
-                        <p class="place__text">В 2020 году Цикловое совещание дивизиона Consumer Health будет проходить в одном из самых привлекательных мест в мире – в Объединенных Арабских Эмиратах, в городе Дубай.</p>
-                        <div class="place__where">
-                            <div class="place__part">
-                                <p class="place__text1">Район</p>
-                                <p class="place__text2">Al Habtoor City</p>
-                            </div>
-                            <div class="place__part">
-                                <p class="place__text1">Улица</p>
-                                <p class="place__text2">Sheikh Zayed Road</p>
-                            </div>
-                            <div class="place__part">
-                                <p class="place__text1">Станция метро</p>
-                                <p class="place__text2">Business Bay</p>
-                            </div>
-                            <div class="place__part">
-                                <p class="place__text1"></p>
-                                <p class="place__text3">~ 10 минут от отеля</p>
-                            </div>
-                        </div>
-                        <span class="place__line"></span>
+                        
                     </div>
                     <div class="place__infos">
-                        <h3 class="place__title">Телефоны экстренных служб</h3>
-                        <div class="place__phones">
-                            <div class="place__phone">
-                                <p class="place__why">Полиция</p>
-                                <a href="" class="place__number">999</a>
+                        <div class="place__info">
+                            <p class="place__text">В 2020 году Цикловое совещание дивизиона Consumer Health будет проходить в одном из самых привлекательных мест в мире – в Объединенных Арабских Эмиратах, в городе Дубай.</p>
+                            <div class="place__where">
+                                <div class="place__part">
+                                    <p class="place__text1">Район</p>
+                                    <p class="place__text2">Al Habtoor City</p>
+                                </div>
+                                <div class="place__part">
+                                    <p class="place__text1">Улица</p>
+                                    <p class="place__text2">Sheikh Zayed Road</p>
+                                </div>
+                                <div class="place__part">
+                                    <p class="place__text1">Станция метро</p>
+                                    <p class="place__text2">Business Bay</p>
+                                </div>
+                                <div class="place__part">
+                                    <p class="place__text1">&nbsp;&nbsp;&nbsp;</p>
+                                    <p class="place__text3">~ 10 минут от отеля</p>
+                                </div>
+                                <span class="place__line2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                             </div>
-                            <div class="place__phone">
-                                <p class="place__why">Скорая помощь</p>
-                                <a href="" class="place__number">998</a>
-                            </div>
-                            <div class="place__phone">
-                                <p class="place__why">Пожарная охрана</p>
-                                <a href="" class="place__number">997</a>
-                            </div>
+                            
                         </div>
-                        <p class="place__text">Экстренный вызов при звонках с мобильного телефона</p>
-                        <a href="" class="place__number">112</a>
+                    <div class="place__info">
+                            <h3 class="place__title">Телефоны экстренных служб</h3>
+                            <div class="place__phones">
+                                <div class="place__phone">
+                                    <p class="place__why">Полиция</p>
+                                    <a href="tel:999" class="place__number">999</a>
+                                </div>
+                                <div class="place__phone">
+                                    <p class="place__why">Скорая помощь</p>
+                                    <a href="tel:998" class="place__number">998</a>
+                                </div>
+                                <div class="place__phone">
+                                    <p class="place__why">Пожарная охрана</p>
+                                    <a href="tel:997" class="place__number">997</a>
+                                </div>
+                            </div>
+                            <p class="place__text4">Экстренный вызов при звонках с мобильного телефона</p>
+                            <a href="tel:112" class="place__number">112</a>
+                        </div>
                     </div>
                 </div>
             </section>
             <!-- PLACE ============== -->
         </div>
-        <div class="blocks">
+        <div class="blocks" id="exc">
             <!-- ЭКСКУРСИИ ============== -->
             <section class="block">
                 <h2 class="block__title">Экскурсии</h2>
                 <div class="exc">
-                    <img src="image/exc.jpg" alt="Экскурсии" class="exc__bckg">
+                    <div class="exc__part">
+                        <img src="image/exc.png" alt="Экскурсии" class="exc__img">
+                    </div>
                     <div class="exc__info">
                         <h3 class="exc__title">Экскурсионная программа по Дубай от аккредитованного партнера и ещё пара предложений</h3>
-                        <a class="button" href="" target="_blank"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more">Узнать больше</a>
+                        <a class="button" href="https://dubairelaxtours.com" target="_blank"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more">Узнать больше</a>
                     </div>
                 </div>
             </section>
             <!-- ЭКСКУРСИИ ============== -->
         </div>
-        <div class="blocks">
+        <div class="blocks" id="contacts">
             <!-- КОНТАКТЫ ============== -->
             <section class="block">
-                <h2 class="block__title">Контакты</h2>
+                <h2 class="block__title block__title-right">Контакты</h2>
                 <div class="contacts">
 
                     <div class="contacts__block">
-                        <h3 class="contacts__title">по размещению, трансферу, питанию</h3>
+                        <h3 class="contacts__title">по размещению,<br>трансферу, питанию</h3>
                         <div class="contacts__info">
                             <div class="contacts__names">
                                 <h3 class="contacts__name">Мизяева Марина</h3>
@@ -701,7 +733,7 @@
                                 <a href="" class="contacts__phone">+7 (985) 610 08 42</a>
                             </div>
                         </div>
-                        <span class="contacts__line"></span>
+                        <span class="contacts__line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                     </div>
 
                     <div class="contacts__block">
@@ -713,7 +745,7 @@
                             </div>
 
                         </div>
-                        <span class="contacts__line"></span>
+                        <span class="contacts__line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                     </div>
 
                     <div class="contacts__block">
@@ -729,7 +761,7 @@
                                 <a href="" class="contacts__phone">+971 42 446 047</a>
                             </div>
 
-                            <div class="contacts__names">
+                            <div class="contacts__names contacts__names-opacity">
                                 <h3 class="contacts__name">АAAAAAAAAAAAAA</h3>
                                 <a href="" class="contacts__phone">+7 (903) 251 22 34 </a>
                             </div>
@@ -741,25 +773,29 @@
                         </div>
 
                     </div>
-
+                <div class="contacts__lines">
+                    <span class="contacts__main-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <a href="#wrapper" class="button"><img src="image/img-close-button.svg" alt="Close button img" class="button__img-close">Перейти в начало</a>
                 </div>
-                <span class="contacts__main-line"></span>
-                <button class="button"><img src="image/img-close-button.svg" alt="Close button img" class="button__img-close">Перейти в начало</button>
+                </div>
+                
             </section>
             <!-- КОНТАКТЫ ============== -->
         </div>
         <div class="blocks">
+           <img src="image/footer-bckg.png" alt="Bckg" class="footer__bckg">
+           <img src="image/footer-big-logo.png" alt="Logo" class="footer__logo-bckg">
             <!-- FOOTER ============== -->
             <footer class="footer">
-                <img src="image/footer-big-logo.png" alt="Logo" class="footer__logo-bckg">
-                <img src="image/footer-bckg.png" alt="Bckg" class="footer__bckg">
+                
+                
                 <div class="footer__content">
                     <div class="footer__info">
                         <img src="image/footr-small-Logo.png" alt="Logo" class="footer__logo">
                         <h3 class="footer__date">11 января 2020</h3>
                     </div>
                     <div class="footer__info">
-                        <img src="image/sponsor-logo-color.png" alt="logo" class="footer__icon">
+                        <a href="https://www/bayer.ru" class="footer__link" target="_blank"><img src="image/sponsor-logo-color.png" alt="logo" class="footer__icon"></a>
                         <div class="footer__texts">
                             <p class="footer__text">Цикловое совещание компании Bayer Consumer Health</p>
                             <p class="footer__text">Все права защищены © 2019-2020</p>
@@ -777,8 +813,27 @@
 
     <!-- SCRIPTS START ==================================================================== -->
 
-    <script src=""></script>
+   <!--smooth scroll -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
 
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
+    <!--<script src="js/glitch.min.js" defer></script>
+    <script src="js/glitch.js" defer></script>
+-->
+    <script src="js/lazyYT.js" defer></script>
+    <script src="js/video.js" defer></script>
+
+    
     <!-- SCRIPTS END ====================================================================== -->
 
     <!-- METRIKA START ====================================================================== -->
