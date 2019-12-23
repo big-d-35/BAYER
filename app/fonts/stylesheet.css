@@ -1,11 +1,12 @@
 @font-face {
-    font-family: 'TUITypeLight';
-    src: url('TUITypeLight-Regular.eot');
-    src: url('TUITypeLight-Regular.eot?#iefix') format('embedded-opentype'),
-        url('TUITypeLight-Regular.woff2') format('woff2'),
-        url('TUITypeLight-Regular.woff') format('woff'),
-        url('TUITypeLight-Regular.ttf') format('truetype');
+    font-family: 'Bender';
+    src: url('../fonts/benderlight.woff2');
+    src: 
+        url('../fonts/benderlight.woff2') format('woff2'),
+        url('../fonts/benderlight.woff') format('woff'),
+        url('../fonts/benderlight.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
+
 
