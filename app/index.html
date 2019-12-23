@@ -111,6 +111,7 @@
             <!-- ГЛАВНЫЙ ЭКРАН ============== -->
             <img src="image/bckg1.png" alt="" class="block__bckg-right " >
         </div>
+        
         <div class="blocks" id="speakers">
             <!-- СПИКЕРЫ ============== -->
             <section class="block">
@@ -120,14 +121,14 @@
                     <div class="names">
                         <img src="image/Medvedev.jpg" alt="Photo Medvedev" class="names__photo" id="glitch1">
                         <h3 class="names__title">Даниил<br>Медведев</h3>
-                        <button class="button"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more">Биография</button>
+                        <button class="button" id="button-popup1"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more">Биография</button>
                         <p class="names__text">Всё о трендах</p>
                         <p class="names__line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                     </div>
                     <div class="names">
                         <img src="image/Grishin.jpg" alt="Photo Grishin" class="names__photo">
                         <h3 class="names__title">Денис<br>Гришин</h3>
-                        <button class="button"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more">Биография</button>
+                        <button class="button" id="button-popup2"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more">Биография</button>
                         <p class="names__text">Искусственный интеллект. Нужны ли ещё фармацевты?</p>
                         <p class="names__line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                     </div>
@@ -144,6 +145,7 @@
                     </a>
 
                 </div>
+                
             </section>
             <!-- СПИКЕРЫ ============== -->
         </div>
@@ -174,36 +176,36 @@
                     </div>
                     <!-- mobile ========-->
 
-                    <div class="programm__buttons">
-                        <button class="programm__button programm__button-active">
+                    <div class="programm__buttons" id="program-buttons">
+                        <button class="programm__button programm__button-active" data-id="1">
                             <span class="programm__button-date programm__button-active-date">11</span>
                             <span class="programm__button-month programm__button-active-month">Января</span>
                             <span class="programm__button-line programm__button-active-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                         </button>
-                        <button class="programm__button">
+                        <button class="programm__button" data-id="2">
                             <span class="programm__button-date ">12</span>
                             <span class="programm__button-month ">Января</span>
-                            <span class="programm__button-link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="programm__button-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                         </button>
-                        <button class="programm__button">
+                        <button class="programm__button" data-id="3">
                             <span class="programm__button-date ">13</span>
                             <span class="programm__button-month ">Января</span>
-                            <span class="programm__button-link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="programm__button-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                         </button>
-                        <button class="programm__button">
+                        <button class="programm__button" data-id="4">
                             <span class="programm__button-date ">14</span>
                             <span class="programm__button-month ">Января</span>
-                            <span class="programm__button-link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="programm__button-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                         </button>
-                        <button class="programm__button">
+                        <button class="programm__button" data-id="5">
                             <span class="programm__button-date ">15</span>
                             <span class="programm__button-month ">Января</span>
-                            <span class="programm__button-link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="programm__button-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                         </button>
                     </div>
                     <div class="programm__blocks">
                         <!-- ONE BLOCK ========= -->
-                        <div class="programm__block programm__block-active">
+                        <div class="programm__block programm__block-active" data-id="1">
                             <div class="programm__part">
                                 <div class="programm__names">
                                     <h3 class="programm__name">Общее собрание дивизиона Consumer Health</h3>
@@ -230,7 +232,7 @@
                         <!-- ONE BLOCK ========= -->
 
                         <!-- ONE BLOCK ========= -->
-                        <div class="programm__block ">
+                        <div class="programm__block " data-id="2">
                             <div class="programm__part">
                                 <div class="programm__names">
                                     <h3 class="programm__name">Совещание регионов</h3>
@@ -348,7 +350,7 @@
                         <!-- ONE BLOCK ========= -->
 
                         <!-- ONE BLOCK ========= -->
-                        <div class="programm__block ">
+                        <div class="programm__block " data-id="3">
                             <div class="programm__part">
                                 <div class="programm__names">
                                     <h3 class="programm__name">Обучающие сессии медицинских представителей</h3>
@@ -433,7 +435,7 @@
                         <!-- ONE BLOCK ========= -->
 
                         <!-- ONE BLOCK ========= -->
-                        <div class="programm__block ">
+                        <div class="programm__block " data-id="4">
                             <div class="programm__part">
                                 <div class="programm__names">
                                     <h3 class="programm__name">Обучающие сессии медицинских представителей</h3>
@@ -518,7 +520,7 @@
                         <!-- ONE BLOCK ========= -->
 
                         <!-- ONE BLOCK ========= -->
-                        <div class="programm__block ">
+                        <div class="programm__block " data-id="5">
                             <div class="programm__part">
                                 <div class="programm__names">
                                     <h3 class="programm__name">Обучающие сессии группы УКРАИНА</h3>
@@ -573,13 +575,16 @@
                             <button class="button guest-button-mobile"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more">Подробнее</button>
                         </div>
                     </div>
+                    
+                    <!-- VIDEO =================== -->
+                    
                     <div class="guest__video " id="Vbtpm23ucw4" >
 
                 <iframe
                   width="663"
                   height="300"
                   src="https://www.youtube.com/embed/Vbtpm23ucw4"
-                  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/Vbtpm23ucw4?autoplay=1><img src=https://img.youtube.com/vi/Y8Wp3dafaMQ/hqdefault.jpg <span>▶</span></a>"
+                  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/Vbtpm23ucw4?autoplay=1><img src=http://bayer.ktonado.digital/image/video-bckg.jpg <span>▶</span></a>"
                   frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
@@ -587,6 +592,8 @@
                 ></iframe>
                     </div>
 
+                   <!-- VIDEO =================== -->
+                   
                     <div class="guest__block">
 
                         <div class="guest__names">
@@ -806,7 +813,60 @@
 
             <!-- FOOTER ============== -->
         </div>
-
+        <div class="speaker " id="popup-grishin">
+                    <div class="speaker__block">
+                       <img src="image/pop-up-part1.png" alt="" class="speaker__bckg1">
+                        <div class="speaker__buttons">
+                            <button class="speaker__button" id="close-popup1">
+                                <img src="image/close-button.svg" alt="Close Icon" class="speaker__icon">
+                            </button>
+                        </div>
+                        <div class="speaker__info">
+                            <div class="speaker__main">
+                                <img src="image/Grishin.jpg" alt="Grishin" class="speaker__photo">
+                                <div class="speaker__names">
+                                    <h3 class="speaker__name">Денис Гришин</h3>
+                                    <p class="speaker__question">Искусственный интеллект. Нужны ли ещё фармацевты?</p>
+                                    <span class="speaker__line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                </div>
+                                
+                            </div>
+                            <div class="speaker__infos">
+                                    <p class="speaker__text">
+                                        Специалист международного уровня - более 20 лет опыта в маркетинге и технологических компаниях, более 10 лет управленческого опыта на позициях C-Level.<br><br> В Великобритании работал в технологическом рекламном агентстве Sapient Nitro, в России более трёх лет возглавлял одну из крупнейших data-ориентированных компаний Data Centric Alliance, во Вьетнамской компании CocCoc (поисковая система и интернет браузер) отвечал за развитие партнерств и поиски новых источников дохода.<br><br> Сейчас консультирует технологические стартапы в области развития продуктовой b2b и b2c экспертизы и помогает с диджитализацией крупным компаниям.
+                                    </p>
+                                </div>
+                        </div>
+                        <img src="image/pop-up-part2.png" alt="" class="speaker__bckg2">
+                    </div>
+                </div>
+                <div class="speaker " id="popup-medvedev">
+                    <div class="speaker__block">
+                       <img src="image/pop-up-part1.png" alt="" class="speaker__bckg1">
+                        <div class="speaker__buttons">
+                            <button class="speaker__button" id="close-popup2">
+                                <img src="image/close-button.svg" alt="Close Icon" class="speaker__icon">
+                            </button>
+                        </div>
+                        <div class="speaker__info">
+                            <div class="speaker__main">
+                                <img src="image/Medvedev.jpg" alt="Grishin" class="speaker__photo">
+                                <div class="speaker__names">
+                                    <h3 class="speaker__name">Даниил Медведев</h3>
+                                    <p class="speaker__question">Все о трендах</p>
+                                    <span class="speaker__line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                </div>
+                                
+                            </div>
+                            <div class="speaker__infos">
+                                    <p class="speaker__text">
+                                        Ведущий российский футуролог. За 10 лет помог сделать идеи физического бессмертия, трансгуманизма, крионики, киборгизации, усиления интеллекта известными и приемлемыми в России.<br><br> Сейчас реализует практические проек ярный лектор по футурологии, а также бизнес-консультант для ряда крупных компаний.
+                                    </p>
+                                </div>
+                        </div>
+                        <img src="image/pop-up-part2.png" alt="" class="speaker__bckg2">
+                    </div>
+                </div>
     </main>
 
     <!-- MAIN END ========================================================================= -->
@@ -830,7 +890,7 @@
     <!--<script src="js/glitch.min.js" defer></script>
     <script src="js/glitch.js" defer></script>
 -->
-    <script src="js/lazyYT.js" defer></script>
+    <script src="js/main.js" defer></script>
     <script src="js/video.js" defer></script>
 
     

@@ -10,6 +10,16 @@
     }
 }
 
+@keyframes my-animation-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 @media (min-width: 1201px) {
     .wrapper{
         overflow: hidden;
@@ -409,6 +419,171 @@
         }
     }
     
+    .speaker {
+        display: none;
+        
+        &-active {
+            opacity: 1;
+            animation-name: my-animation;
+            animation-duration: 0.5s;
+            width: 100vw;
+            height: 100vh; 
+            z-index: 20;
+            position: fixed;
+            top: 0;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        &__block {
+            z-index: 21;
+            width: 768px;
+            background: rgba(0, 0, 0, 1);
+            box-shadow: 0px 4px 200px rgba(72, 126, 207, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            position: relative;
+            overflow: hidden;
+        }
+        &__bckg1 {
+            
+            position: absolute;
+            z-index: 21;
+            top: 0;
+            left: 0;
+        }
+        &__bckg2 {
+            position: absolute;
+            z-index: 21;
+            bottom: 0;
+            right: 0;
+        }
+        &__buttons {
+            z-index: 22;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            
+        }
+        &__button {
+            margin-right: 40px;
+            margin-top: 40px;
+            cursor: pointer;
+            width: 44px;
+            height: 44px;
+            background: transparent;
+            border: 0px;
+            padding: 0;
+        }
+        &__icon {
+            width: 100%;
+        }
+        &__info {
+            z-index: 22;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        &__main {
+            
+            width: 86%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-left: 65px;
+            margin-bottom: 55px;
+        }
+        &__photo {
+            width: 193px;
+        }
+        &__names {
+            position: relative;
+            width: 100%;
+            margin-left: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        &__name {
+            width: 80%;
+            font-family: Bender;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 35px;
+            line-height: 50px;
+            /* or 143% */
+
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.2em;
+
+            /* Text / Color */
+
+            color: #FFFFFF;
+            margin-bottom: 40px;
+          }
+        &__question {
+            width: 70%;
+            font-family: Bender;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 28px;
+            /* or 175% */
+
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.15em;
+
+            /* Text / Color */
+
+            color: #FFFFFF;
+        }
+        &__infos {
+            width: 86%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-left: 65px;
+            margin-bottom: 45px;
+        }
+        &__text {
+            width: 85%;
+            font-family: Bender;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 28px;
+            /* or 175% */
+
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.15em;
+
+            /* Text / Color */
+
+            color: #FFFFFF;
+
+        }
+        &__line {
+            bottom: -60px;
+            right: 40px;
+            position: absolute;
+            border-top: 1px solid #FFFFFF;
+        }
+    }
+    
     .button  {
         display: flex;
         flex-direction: row;
@@ -573,7 +748,9 @@
             }
             &-active {
                 position: relative;
-                
+                opacity: 1;
+                animation-name: my-animation;
+                animation-duration: 0.5s;
                 width: 127px;
                 height: 127px;
                 border: 0px solid #54F5FF;
@@ -612,6 +789,9 @@
         &__block {
             display: none;
             &-active {
+                opacity: 1;
+                animation-name: my-animation;
+                animation-duration: 0.5s;
                 width: 100%;
                 display: flex;
                 flex-direction: column;
