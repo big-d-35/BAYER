@@ -47,18 +47,16 @@ buttonClosePopup4.onclick = function(){
 
 const headerButtonMobile = document.getElementById('header__button-mobile');
 const headerPopupMenuMobile = document.getElementById('header-mobile-menu-popup');
-const headerPopupMenuItemsMobile = document.getElementsByClassName('header__mlink');
 
-console.log(headerPopupMenuItemsMobile);
 
 headerButtonMobile.onclick = function(){
     headerButtonMobile.classList.toggle('header__button-active');
     headerPopupMenuMobile.classList.toggle('header__mlinks-active');
 };
 
-//headerPopupMenuItemsMobile.addEventListener('click', function (event) {
-//    headerPopupMenuMobile.classList.remove('header__mlinks-active');
-//});
+headerPopupMenuMobile.onclick = function () {
+    headerPopupMenuMobile.classList.remove('header__mlinks-active');
+};
 
 
 const text1 = document.getElementById('text1');
