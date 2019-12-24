@@ -23,8 +23,29 @@ buttonClosePopup2.onclick = function(){
     popup2.classList.remove('speaker-active');
 };
 
+const headerButtonMobile = document.getElementById('header__button-mobile');
+const headerPopupMenuMobile = document.getElementById('header-mobile-menu-popup');
 
+headerButtonMobile.onclick = function(){
+    headerButtonMobile.classList.toggle('header__button-active');
+    headerPopupMenuMobile.classList.toggle('header__mlinks-active');
+};
 
+const text1 = document.getElementById('text1');
+const buttonText1More = document.getElementById('button-text1-more');
+const buttonText1Close = document.getElementById('button-text1-close');
+
+buttonText1More.onclick = function(){
+    text1.classList.toggle('text1__info-active');
+    buttonText1More.classList.toggle('button-inactive');
+    buttonText1Close.classList.toggle('button-inactive');
+};
+
+buttonText1Close.onclick = function(){
+    text1.classList.toggle('text1__info-active');
+    buttonText1More.classList.toggle('button-inactive');
+    buttonText1Close.classList.toggle('button-inactive');
+};
 
 //const optionsBlock = document.getElementById('hotels-options-mobile');
 const programButtons = document.getElementById('program-buttons');
