@@ -17,12 +17,13 @@
 
     <link rel="stylesheet" href="css/reset.min.css">
     <link rel="stylesheet" media="all" href="fonts/stylesheet.css">
-    <link rel="stylesheet" media="all" href="scss/all-css.css">
-    <!--
-    <link rel="stylesheet" media="all and (min-width: 901px) and (max-width: 1200px)" href="scss/all-css.css">
-    <link rel="stylesheet" media="all and (min-width: 601px) and (max-width: 900px)" href="css/3_tablet.min.css"> 
-    <link rel="stylesheet" media="all and (max-width: 600px)" href="css/4_mobile.min.css">
--->
+    <link rel="stylesheet" media="all and (min-width: 1201px)" href="scss/desktop.css">
+    
+    <link rel="stylesheet" media="all and (min-width: 901px) and (max-width: 1200px)" href="scss/laptop.css">
+    <link rel="stylesheet" media="all and (min-width: 601px) and (max-width: 900px)" href="scss/tablet.css"> 
+    <link rel="stylesheet" media="all and (min-width: 401px) and (max-width: 600px)" href="scss/tablet2.css"> 
+    <link rel="stylesheet" media="all and (max-width: 400px)" href="scss/mobile.css">
+
 
     <!-- CSS STYLE ======================================================= -->
 
@@ -187,12 +188,12 @@
                     <!-- mobile ========-->
 
                     <div class="programm__buttons" id="program-buttons">
-                        <button class="programm__button programm__button-active" data-id="1">
+                        <button class="programm__button programm__button-active " data-id="1">
                             <span class="programm__button-date programm__button-active-date">11</span>
                             <span class="programm__button-month programm__button-active-month">Января</span>
                             <span class="programm__button-line programm__button-active-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                         </button>
-                        <button class="programm__button" data-id="2">
+                        <button class="programm__button " data-id="2">
                             <span class="programm__button-date ">12</span>
                             <span class="programm__button-month ">Января</span>
                             <span class="programm__button-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
@@ -582,7 +583,7 @@
                         <div class="guest__names">
                             <img src="image/zaceva.jpg" alt="Маша Зайцева" class="guest__image">
                             <h3 class="guest__name">Маша<br>Зайцева</h3>
-                            <button class="button guest-button-mobile"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more">Подробнее</button>
+                            <button class="button guest-button-mobile" id="button-popup-zayceva"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more">Подробнее</button>
                         </div>
                     </div>
                     
@@ -609,7 +610,7 @@
                         <div class="guest__names">
                             <img src="image/sheih.jpg" alt="Маша Шейх" class="guest__image">
                             <h3 class="guest__name">Маша<br>Шейх</h3>
-                            <button class="button guest-button-mobile"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more">Подробнее</button>
+                            <button class="button guest-button-mobile" id="button-popup-sheih"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more">Подробнее</button>
                         </div>
                         <div class="guest__info">
                             <p class="guest__text">Песня с последнего альбома «Мама, я танцую» спровоцировала в интернете настоящий флэшмоб с танцами под зажигательные ритмы, а клип был снят в Боснии и Герцеговине в лучших традициях настоящего кино в духе Эмира Кустурицы и набрал уже более 117 миллионов просмотров на Youtube.</p>
@@ -872,6 +873,62 @@
                             <div class="speaker__infos">
                                     <p class="speaker__text">
                                         Ведущий российский футуролог. За 10 лет помог сделать идеи физического бессмертия, трансгуманизма, крионики, киборгизации, усиления интеллекта известными и приемлемыми в России.<br><br> Сейчас реализует практические проек ярный лектор по футурологии, а также бизнес-консультант для ряда крупных компаний.
+                                    </p>
+                                </div>
+                        </div>
+                        <img src="image/pop-up-part2.png" alt="" class="speaker__bckg2">
+                    </div>
+                </div>
+                
+                <div class="speaker " id="popup-zayceva">
+                    <div class="speaker__block">
+                       <img src="image/pop-up-part1.png" alt="" class="speaker__bckg1">
+                        <div class="speaker__buttons">
+                            <button class="speaker__button" id="close-popup3">
+                                <img src="image/close-button.svg" alt="Close Icon" class="speaker__icon">
+                            </button>
+                        </div>
+                        <div class="speaker__info">
+                            <div class="speaker__main">
+                                <img src="image/zaceva.jpg" alt="Grishin" class="speaker__photo">
+                                <div class="speaker__names">
+                                    <h3 class="speaker__name">Маша Зайцева</h3>
+                                    <p class="speaker__question"></p>
+                                    <span class="speaker__line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                </div>
+                                
+                            </div>
+                            <div class="speaker__infos">
+                                    <p class="speaker__text">
+                                        #2Маши – это перспективный, а главное, беспрецедентно уникальный проект, состоящий из авторов исполнителей Маши Зайцевой и Маши Шейх. Девушки громко заявили о себе с пронзительной песней БОСАЯ которая молниеносно стала расходиться по просторам социальных сетей и  набрала уже более 188 миллионов просмотров на YouTube, не покидает топ-чарты Apple Music и получила престижную премию  «Золотой Граммофон» на Русском радио.
+                                    </p>
+                                </div>
+                        </div>
+                        <img src="image/pop-up-part2.png" alt="" class="speaker__bckg2">
+                    </div>
+                </div>
+                
+                <div class="speaker " id="popup-sheih">
+                    <div class="speaker__block">
+                       <img src="image/pop-up-part1.png" alt="" class="speaker__bckg1">
+                        <div class="speaker__buttons">
+                            <button class="speaker__button" id="close-popup4">
+                                <img src="image/close-button.svg" alt="Close Icon" class="speaker__icon">
+                            </button>
+                        </div>
+                        <div class="speaker__info">
+                            <div class="speaker__main">
+                                <img src="image/sheih.jpg" alt="Grishin" class="speaker__photo">
+                                <div class="speaker__names">
+                                    <h3 class="speaker__name">Маша Шейх</h3>
+                                    <p class="speaker__question"></p>
+                                    <span class="speaker__line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                </div>
+                                
+                            </div>
+                            <div class="speaker__infos">
+                                    <p class="speaker__text">
+                                        Песня с последнего альбома «Мама, я танцую» спровоцировала в интернете настоящий флэшмоб с танцами под зажигательные ритмы, а клип был снят в Боснии и Герцеговине в лучших традициях настоящего кино в духе Эмира Кустурицы и набрал уже более 117 миллионов просмотров на Youtube.
                                     </p>
                                 </div>
                         </div>

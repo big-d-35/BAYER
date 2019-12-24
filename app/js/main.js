@@ -1,10 +1,16 @@
 const first = document.getElementById('wrapper');
 const popup2 = document.getElementById('popup-grishin');
 const popup1 = document.getElementById('popup-medvedev');
+const popup3 = document.getElementById('popup-zayceva');
+const popup4 = document.getElementById('popup-sheih');
 const buttonPopup1 = document.getElementById('button-popup1');
 const buttonPopup2 = document.getElementById('button-popup2');
+const buttonPopup3 = document.getElementById('button-popup-zayceva');
+const buttonPopup4 = document.getElementById('button-popup-sheih');
 const buttonClosePopup1 = document.getElementById('close-popup2');
 const buttonClosePopup2 = document.getElementById('close-popup1');
+const buttonClosePopup3 = document.getElementById('close-popup3');
+const buttonClosePopup4 = document.getElementById('close-popup4');
 
 
 buttonPopup1.onclick = function(){
@@ -23,13 +29,37 @@ buttonClosePopup2.onclick = function(){
     popup2.classList.remove('speaker-active');
 };
 
+buttonPopup3.onclick = function(){
+    popup3.classList.add('speaker-active');
+};
+
+buttonPopup4.onclick = function(){
+    popup4.classList.add('speaker-active');
+};
+
+buttonClosePopup3.onclick = function(){
+    popup3.classList.remove('speaker-active');
+};
+
+buttonClosePopup4.onclick = function(){
+    popup4.classList.remove('speaker-active');
+};
+
 const headerButtonMobile = document.getElementById('header__button-mobile');
 const headerPopupMenuMobile = document.getElementById('header-mobile-menu-popup');
+const headerPopupMenuItemsMobile = document.getElementsByClassName('header__mlink');
+
+console.log(headerPopupMenuItemsMobile);
 
 headerButtonMobile.onclick = function(){
     headerButtonMobile.classList.toggle('header__button-active');
     headerPopupMenuMobile.classList.toggle('header__mlinks-active');
 };
+
+//headerPopupMenuItemsMobile.addEventListener('click', function (event) {
+//    headerPopupMenuMobile.classList.remove('header__mlinks-active');
+//});
+
 
 const text1 = document.getElementById('text1');
 const buttonText1More = document.getElementById('button-text1-more');
@@ -72,6 +102,7 @@ programButtons.addEventListener('click', function (event) {
         
     
         targetButtonDateActive.classList.remove('programm__button-date-active');    
+        targetButtonDateActive.classList.remove('order-1');    
     
         for (i = 0; i < dateActive.length; i++) {
             dateActive[i].classList.remove('programm__button-active');
@@ -91,6 +122,7 @@ programButtons.addEventListener('click', function (event) {
 
 
         target.classList.add('programm__button-active');
+        target.classList.add('order-1');
         targetButtonDate.classList.add('programm__button-active-date');
         targetButtonMonth.classList.add('programm__button-active-month');
         targetButtonLine.classList.add('programm__button-active-line');
@@ -99,18 +131,4 @@ programButtons.addEventListener('click', function (event) {
     });
    
 //options
-optionsBlock.addEventListener('change', function() {
-    let targetOption = this.options[this.selectedIndex];
-    let targetAttr = targetOption.getAttribute('data-option');
-    
-    for (i = 0; i < countrySliders.length; i++) {
 
-            if (countrySliders[i].dataset.id === targetAttr) {
-
-                countrySliders[i].classList.add('hotels-active')
-            } else {
-                countrySliders[i].classList.remove('hotels-active');
-            }
-        }
-
-})
