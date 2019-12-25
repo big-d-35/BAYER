@@ -100,7 +100,7 @@ programButtons.addEventListener('click', function (event) {
         
     
         targetButtonDateActive.classList.remove('programm__button-date-active');    
-        targetButtonDateActive.classList.remove('order-1');    
+        
     
         for (i = 0; i < dateActive.length; i++) {
             dateActive[i].classList.remove('programm__button-active');
@@ -120,7 +120,7 @@ programButtons.addEventListener('click', function (event) {
 
 
         target.classList.add('programm__button-active');
-        target.classList.add('order-1');
+        
         targetButtonDate.classList.add('programm__button-active-date');
         targetButtonMonth.classList.add('programm__button-active-month');
         targetButtonLine.classList.add('programm__button-active-line');
