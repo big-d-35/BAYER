@@ -128,5 +128,65 @@ programButtons.addEventListener('click', function (event) {
 
     });
    
-//options
+//mobile
 
+
+const programButtonsMobile = document.getElementById('programm-buttons-mobile-all');
+const dateActiveMobile = document.getElementsByClassName('programm__button-mobile1-active');
+const dateInActiveMobile = document.getElementsByClassName('programm__button-mobile1');
+const dateInActiveMobile2 = document.getElementsByClassName('programm__button-mobile2');
+const buttonMobile1 = document.getElementById('programm-buttons-mobile-one');
+
+//Переключаем табы
+programButtonsMobile.addEventListener('click', function (event) {
+        let target = event.target.closest('button');
+        let targetButton = event.target.closest('[data-id]');
+        
+        let inactiveButton = programButtonsMobile.querySelector('.programm__button-mobile2-inactive');
+        
+        let activeFirstButton = buttonMobile1.querySelector('.programm__button-mobile1-active');
+        
+        
+        
+        target.classList.add('programm__button-mobile2-inactive');
+        inactiveButton.classList.remove('programm__button-mobile2-inactive');
+        
+        
+        
+    for (i = 0; i < dateInActiveMobile.length; i++) {
+
+            if (dateInActiveMobile[i].dataset.id === targetButton.dataset.id) {
+
+                dateInActiveMobile[i].classList.add('programm__button-mobile1-active')
+            } else {
+                dateInActiveMobile[i].classList.remove('programm__button-mobile1-active');
+            }
+        }
+        
+        //console.log(buttonMobile1);
+    
+          
+         
+    
+        
+
+        for (i = 0; i < dateTabs.length; i++) {
+
+            if (dateTabs[i].dataset.id === targetButton.dataset.id) {
+
+                dateTabs[i].classList.add('programm__block-active')
+            } else {
+                dateTabs[i].classList.remove('programm__block-active');
+            }
+        }
+
+
+
+
+        
+        
+        
+        
+
+
+    });

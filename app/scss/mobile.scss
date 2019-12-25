@@ -872,7 +872,63 @@
         justify-content: flex-start;
         align-items: flex-start;
         &__buttons-mobile {
+            display: flex;
+            width: 100%;
+            
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-bottom: 50px;
+            &-one {
+                
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+            &-all {
+                width: 150px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-wrap: wrap;
+            }
+        }
+        &__button-mobile1 {
             display: none;
+            &-active {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                height: 130px;
+                width: 100px;
+                background: transparent;
+                border: 0px;
+                position: relative;
+                opacity: 1;
+                animation-name: my-animation;
+                animation-duration: 0.5s;
+            }
+        }
+        &__button-mobile2 {
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin: 5px;
+            width: 60px;
+            height: 60px;
+            background: transparent;
+            border: 1px solid #54F5FF;
+            opacity: 1;
+                animation-name: my-animation;
+                animation-duration: 0.5s;
+            &-inactive {
+                display: none;
+            }
         }
         &__buttons {
             width: 100%;
