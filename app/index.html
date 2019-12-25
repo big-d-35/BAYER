@@ -16,6 +16,7 @@
     <!-- CSS STYLE ======================================================================== -->
 
     <link rel="stylesheet" href="css/reset.min.css">
+  
     <link rel="stylesheet" media="all" href="fonts/stylesheet.css">
     <link rel="stylesheet" media="all and (min-width: 1201px)" href="scss/desktop.css">
     
@@ -43,13 +44,13 @@
         <header class="header">
             <img src="image/Logo-header.png" alt="Logo" class="header__logo">
             <div class="header__links">
-                <a class="header__link" href="#speakers">спикеры</a>
-                <a class="header__link" href="#program">программа</a>
-                <a class="header__link" href="#guest">специальный гость</a>
-                <a class="header__link" href="#information">информация</a>
-                <a class="header__link" href="#place">место проведения</a>
-<!--                <a class="header__link" href="#exc">экскурсии</a>-->
-                <a class="header__link" href="#contacts">контакты</a>
+                <a class="header__link" href="#speakers" data-text="спикеры">спикеры</a>
+                <a class="header__link" href="#program" data-text="программа">программа</a>
+                <a class="header__link" href="#guest" data-text="специальный гость">специальный гость</a>
+                <a class="header__link" href="#information" data-text="информация">информация</a>
+                <a class="header__link" href="#place" data-text="место проведения">место проведения</a>
+<!--                <a class="header__link" href="#exc" data-text="экскурсии">экскурсии</a>-->
+                <a class="header__link" href="#contacts" data-text="контакты">контакты</a>
             </div>
             
         </header>
@@ -104,7 +105,7 @@
 
                 </div>
                 <div class="block__content">
-                    <h2 class="block__title block__title-left">Цикловое совещание<br>компании Bayer</h2>
+                    <h2 class="block__title block__title-left" >Цикловое совещание<br>компании Bayer</h2>
                     <div class="text1">
                         <p class="text1__line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                         <div class="text1__info " id="text1">
@@ -132,22 +133,22 @@
                     <div class="names">
                         <img src="image/Medvedev.jpg" alt="Photo Medvedev" class="names__photo" id="glitch1">
                         <h3 class="names__title">Даниил<br>Медведев</h3>
-                        <button class="button" id="button-popup1"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more">Биография</button>
+                        <button class="button" id="button-popup1"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more" data-text="Биография">Биография</button>
                         <p class="names__text">Всё о трендах</p>
                         <p class="names__line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                     </div>
                     <div class="names">
                         <img src="image/Grishin.jpg" alt="Photo Grishin" class="names__photo">
                         <h3 class="names__title">Денис<br>Гришин</h3>
-                        <button class="button" id="button-popup2"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more">Биография</button>
+                        <button class="button" id="button-popup2"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more" data-text="Биография">Биография</button>
                         <p class="names__text">Искусственный интеллект. Нужны ли ещё фармацевты?</p>
                         <p class="names__line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                     </div>
                 </div>
                 <div class="opros">
                     <a href="" class="opros__link" target="_blank">
-                        <div class="opros__block">
-                            <span class="sponsor__title">опрос от спикеров</span>
+                        <div class="opros__block ">
+                            <span class="opros__title " data-text="опрос от спикеров">опрос от спикеров</span>
                             <img src="image/corner.svg" alt="" class="opros__corner-left-top">
                             <img src="image/corner.svg" alt="" class="opros__corner-right-top">
                             <img src="image/corner.svg" alt="" class="opros__corner-left-bottom">
@@ -1032,11 +1033,14 @@
         
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
-    <!--<script src="js/glitch.min.js" defer></script>
-    <script src="js/glitch.js" defer></script>
--->
+    <script src="js/glitch.min.js" defer></script>
+    
+    
+    
     <script src="js/main.js" defer></script>
     <script src="js/video.js" defer></script>
+    
+    <script src="js/glitch.js" defer></script>
 
     
     <!-- SCRIPTS END ====================================================================== -->

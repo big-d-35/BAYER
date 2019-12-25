@@ -46,14 +46,17 @@ $( function() {
 		});
 });
 
+
+
+
 $( function() {
-		$( " " ).mgGlitch({
+		$( ".block__bckg-left" ).mgGlitch({
           // set 'true' to stop the plugin
 				  destroy : false, 
           // set 'false' to stop glitching
           glitch: true, 
           // set 'false' to stop scaling
-          scale: false, 
+          scale: true, 
           // set 'false' to stop glitch blending
           blend : true, 
           // select blend mode type
@@ -68,3 +71,7 @@ $( function() {
           glitch2TimeMax : 500, 
 		});
 });
+
+
+
+
