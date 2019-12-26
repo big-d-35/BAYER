@@ -605,6 +605,7 @@
             align-items: flex-start;
             justify-content: flex-start;
             background: rgba(0, 0, 0, 0.8);
+            overflow-y: scroll;
         }
         &__block {
             z-index: 30;
