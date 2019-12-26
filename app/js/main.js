@@ -27,7 +27,15 @@ buttonClosePopup1.onclick = function(){
     popup1.classList.remove('speaker-active');
 };
 
+popup1.onclick = function(){
+    popup1.classList.remove('speaker-active');
+};
+
 buttonClosePopup2.onclick = function(){
+    popup2.classList.remove('speaker-active');
+};
+
+popup2.onclick = function(){
     popup2.classList.remove('speaker-active');
 };
 
@@ -43,7 +51,15 @@ buttonClosePopup3.onclick = function(){
     popup3.classList.remove('speaker-active');
 };
 
+popup3.onclick = function(){
+    popup3.classList.remove('speaker-active');
+};
+
 buttonClosePopup4.onclick = function(){
+    popup4.classList.remove('speaker-active');
+};
+
+popup4.onclick = function(){
     popup4.classList.remove('speaker-active');
 };
 
