@@ -257,6 +257,7 @@
             align-items: center;
         }
         &__title {
+            z-index: 15;
             width: 100%;
             font-family: Bender;
             font-style: normal;
@@ -920,6 +921,7 @@
             margin: 5px;
             width: 60px;
             height: 60px;
+            padding: 2px;
             background: transparent;
             border: 1px solid #54F5FF;
             opacity: 1;
