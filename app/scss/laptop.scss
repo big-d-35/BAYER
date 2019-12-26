@@ -808,11 +808,99 @@
         justify-content: flex-start;
         align-items: flex-start;
         &__buttons-mobile {
+            display: flex;
+            width: 100%;
+            
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-bottom: 50px;
+            &-one {
+                
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+            &-all {
+                width:55%;;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-wrap: wrap;
+            }
+        }
+        &__button-mobile1 {
             display: none;
+            &-active {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                height: 130px;
+                width: 150px;
+                background: transparent;
+                border: 0px;
+                position: relative;
+                opacity: 1;
+                animation-name: my-animation;
+                animation-duration: 0.5s;
+                padding-left: 0px;
+            padding-top: 14px;
+                margin-right: 20px;
+            }
+            &-active-date {
+                font-family: Bender;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 32px;
+                line-height: 40px;
+                /* identical to box height, or 125% */
+
+                letter-spacing: 0.3em;
+
+                /* Text / Link Color */
+
+                color: #54F5FF;
+            }
+            &-active-month {
+                font-family: Bender;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 40px;
+                /* or 267% */
+
+                letter-spacing: 0.3em;
+
+                /* Text / Link Color */
+
+                color: #54F5FF;
+            }
+        }
+        &__button-mobile2 {
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin: 5px;
+            width: 150px;
+            height: 130px;
+            padding: 10px;
+            background: transparent;
+            border: 1px solid #54F5FF;
+            opacity: 1;
+                animation-name: my-animation;
+                animation-duration: 0.5s;
+            &-inactive {
+                display: none;
+            }
         }
         &__buttons {
             width: 85%;
-            display: flex;
+            display: none;
             flex-direction: row;
             justify-content: flex-start;
             align-items: center;
@@ -897,7 +985,7 @@
             }
         }
         &__blocks {
-            width: 85%;
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -926,14 +1014,14 @@
             margin-bottom: 80px;
         }
         &__names {
-            width: 50%;
+            width: 70%;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
         }
         &__name {
-            width: 80%;
+            width: 70%;
             font-family: Bender;
             font-style: normal;
             font-weight: normal;
@@ -949,7 +1037,7 @@
             margin-bottom: 20px;
         }
         &__text {
-            width: 50%;
+            width: 90%;
             font-family: Bender;
             font-style: normal;
             font-weight: normal;
@@ -964,7 +1052,7 @@
             color: #C902C8;
         }
         &__info {
-            width: 50%;
+            width: 40%;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -998,7 +1086,7 @@
             }
         }
         &__about {
-            width: 50%;
+            width: 60%;
             font-family: Bender;
             font-style: normal;
             font-weight: normal;
@@ -1149,6 +1237,10 @@
         }
         &-button-mobile {
             display: none;
+        }
+        &-button-desktop {
+            display: flex;
+            margin-bottom: 60px;
         }
         
     }
@@ -1750,13 +1842,13 @@
         align-items: center;
         justify-content: center;
         padding-top: 45px;
-        margin-bottom: 40px;
+        
         position: relative;
         &__bckg {
             z-index: 0;
-            width: 300px;
+            width:500px;
             position: absolute;
-            right: 0;
+            right: -100px;
             top: 0px;
         }
         &__logo-bckg {
@@ -1765,7 +1857,7 @@
             z-index: 2;
             position: absolute;
             right: -5px;
-            top: 200px;
+            top: 400px;
         }
         &__content {
             z-index: 10;

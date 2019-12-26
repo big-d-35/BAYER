@@ -7,6 +7,8 @@ const buttonPopup1 = document.getElementById('button-popup1');
 const buttonPopup2 = document.getElementById('button-popup2');
 const buttonPopup3 = document.getElementById('button-popup-zayceva');
 const buttonPopup4 = document.getElementById('button-popup-sheih');
+const buttonPopup5 = document.getElementById('button-popup-zayceva2');
+const buttonPopup6 = document.getElementById('button-popup-sheih2');
 const buttonClosePopup1 = document.getElementById('close-popup2');
 const buttonClosePopup2 = document.getElementById('close-popup1');
 const buttonClosePopup3 = document.getElementById('close-popup3');
@@ -44,6 +46,15 @@ buttonClosePopup3.onclick = function(){
 buttonClosePopup4.onclick = function(){
     popup4.classList.remove('speaker-active');
 };
+
+buttonPopup5.onclick = function(){
+    popup3.classList.add('speaker-active');
+};
+
+buttonPopup6.onclick = function(){
+    popup4.classList.add('speaker-active');
+};
+
 
 const headerButtonMobile = document.getElementById('header__button-mobile');
 const headerPopupMenuMobile = document.getElementById('header-mobile-menu-popup');
