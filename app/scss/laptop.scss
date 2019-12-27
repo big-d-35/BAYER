@@ -450,10 +450,18 @@ body {
         align-items: flex-start;
         margin-right: 20px;
         position: relative;
+        
         &__photo {
+            position: absolute;
             width: 190px;
             height: 190px;
             margin-bottom: 40px;
+            &-container {
+                position: relative;
+                width: 190px;
+                height: 190px;
+                margin-bottom: 40px;
+            }
         }
         &__title {
             font-family: Bender;
@@ -681,6 +689,11 @@ body {
         /* Text / Link Color */
         cursor: pointer;
         color: #54F5FF;
+        &-container {
+            
+            display: flex;
+            align-items: center;
+        }
         &__img-more {
             width: 16px;
             height: 8px;
@@ -697,6 +710,7 @@ body {
                 animation: glitch-skew 1s infinite linear alternate-reverse;
             }
             &::before{
+                content: attr(data-text);
                 // Duplicates our text with the mixin.
                 @include glitchCopy;
                 // Scoots text slightly to the left for the color offset.
@@ -712,6 +726,7 @@ body {
                 animation: glitch-anim 5s infinite linear alternate-reverse;
             }
             &::after {
+                content: attr(data-text);
                 @include glitchCopy;
                 left: -8px;
                 text-shadow: -8px 0 #00fff9, 2px 2px #ff00c1;
@@ -1222,10 +1237,18 @@ body {
             justify-content: flex-start;
             align-items: center;
         }
+        
         &__image {
+            position: absolute;
             width: 190px;
             height: 190px;
-            margin-bottom: 45px;
+            
+            &-container {
+                position: relative;
+                width: 190px;
+                height: 190px;
+                margin-bottom: 45px;
+            }
         }
         &__name {
             width: 50%;
@@ -1433,9 +1456,17 @@ body {
             position: absolute;
             border-top: 1px solid #FFFFFF;
         }
+        
         &__map {
-            margin-top: 80px;
+            z-index: 20;
+            position: absolute;
             width: 317px;
+            &-container {
+                z-index: 20;
+                
+                margin-top: 80px;
+                width: 317px;
+            }
         }
         &__infos {
             width: 45%;

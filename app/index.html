@@ -125,8 +125,16 @@
                             <h3 class="text1__title">Внутренние изменения – внешний результат</h3>
                         </div>
                         <div class="text1__buttons">
-                            <button class="button" id="button-text1-more"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more">Подробнее</button>
-                            <button class="button button-inactive" id="button-text1-close"><img src="image/img-close-button.svg" alt="Close button img" class="button__img-close">Свернуть</button>
+                           <div class="button-container" id="button-text1-more">
+                               <img src="image/img-more-button.svg" alt="More button img" class="button__img-more">
+                                <button class="button"  data-text="Подробнее">Подробнее</button>
+                            </div>
+                            
+                            <div class="button-container button-inactive" id="button-text1-close">
+                                <img src="image/img-close-button.svg" alt="Close button img" class="button__img-close">
+                                <button class="button " id="button-text1-close" data-text="Свернуть">Свернуть</button>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -143,16 +151,30 @@
                 <h2 class="block__title block__title-right">Спикеры</h2>
                 <div class="block__names">
                     <div class="names">
-                        <img src="image/Medvedev.jpg" alt="Photo Medvedev" class="names__photo" id="glitch1">
+                        <div class="names__photo-container">
+                           <img src="image/Medvedev.jpg" alt="Photo Medvedev" class="names__photo" >
+                        </div>
+                        
                         <h3 class="names__title">Данила<br>Медведев</h3>
-                        <button class="button" id="button-popup1"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more" data-text="Биография">Биография</button>
+                        <div class="button-container">
+                           <img src="image/img-more-button.svg" alt="More button img" class="button__img-more" >
+                            <button class="button" id="button-popup1" data-text="Биография">Биография</button>
+                        </div>
+                        
                         <p class="names__text">Всё о трендах</p>
                         <p class="names__line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                     </div>
                     <div class="names">
-                        <img src="image/Grishin.jpg" alt="Photo Grishin" class="names__photo">
+                        <div class="names__photo-container">   
+                            <img src="image/Grishin.jpg" alt="Photo Grishin" class="names__photo">
+                        </div>
                         <h3 class="names__title">Денис<br>Гришин</h3>
-                        <button class="button" id="button-popup2"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more" data-text="Биография">Биография</button>
+                        <div class="button-container">
+                           <img src="image/img-more-button.svg" alt="More button img" class="button__img-more" >
+                            <button class="button" id="button-popup2" data-text="Биография">
+                            Биография</button>
+                        </div>
+                        
                         <p class="names__text">Искусственный интеллект. Нужны ли ещё фармацевты?</p>
                         <p class="names__line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                     </div>
@@ -253,21 +275,7 @@
                             <span class="programm__button-month ">Января</span>
                             <span class="programm__button-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                         </button>
-                        <!--<button class="programm__button" data-id="3">
-                            <span class="programm__button-date ">13</span>
-                            <span class="programm__button-month ">Января</span>
-                            <span class="programm__button-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                        </button>
-                        <button class="programm__button" data-id="4">
-                            <span class="programm__button-date ">14</span>
-                            <span class="programm__button-month ">Января</span>
-                            <span class="programm__button-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                        </button>
-                        <button class="programm__button" data-id="5">
-                            <span class="programm__button-date ">15</span>
-                            <span class="programm__button-month ">Января</span>
-                            <span class="programm__button-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                        </button>-->
+                        
                     </div>
                     <div class="programm__blocks">
                        
@@ -338,210 +346,10 @@
                         </div>
                         <!-- ONE BLOCK ========= -->
 
-                        <!-- ONE BLOCK ========= 
-                        <div class="programm__block " data-id="3">
-                            <div class="programm__part">
-                                <div class="programm__names">
-                                    <h3 class="programm__name">Обучающие сессии медицинских представителей</h3>
-                                    <p class="programm__text"></p>
-                                </div>
-                                <div class="programm__info">
-                                    <h3 class="programm__titles">Ground Floor: зона основных залов</h3>
-                                    <div class="programm__more">
-                                        <p class="programm__infos">Ballroom A</p>
-                                        <p class="programm__infos">УВМП</p>
-                                    </div>
-                                    <div class="programm__more">
-                                        <p class="programm__infos">Ballroom А</p>
-                                        <p class="programm__infos">ВМП Л1</p>
-                                    </div>
-                                    <div class="programm__more">
-                                        <p class="programm__infos">Ballroom B</p>
-                                        <p class="programm__infos">АПМ</p>
-                                    </div>
-                                    <div class="programm__more">
-                                        <p class="programm__infos">Ballroom C</p>
-                                        <p class="programm__infos">ВМП Л2</p>
-                                    </div>
-
-                                    <span class="programm__line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                </div>
-                            </div>
-
-                            <div class="programm__part">
-                                <div class="programm__names">
-                                    <h3 class="programm__name">Обучающие сессии групп: СП, сети, коммерческий отдел</h3>
-                                    <p class="programm__text"></p>
-                                </div>
-                                <div class="programm__info">
-                                    <h3 class="programm__titles">Level 2: конференц-залы</h3>
-                                    <div class="programm__more">
-                                        <p class="programm__infos">Iris + Lily</p>
-                                        <p class="programm__infos">Специалисты по продукту</p>
-                                    </div>
-                                    <div class="programm__more">
-                                        <p class="programm__infos">Malva + Magnolia</p>
-                                        <p class="programm__infos">Отдел по работе с сетями</p>
-                                    </div>
-                                    <div class="programm__more">
-                                        <p class="programm__infos">Lotus</p>
-                                        <p class="programm__infos">Коммерческий отдел</p>
-                                    </div>
-
-                                    <span class="programm__line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                </div>
-                            </div>
-
-                            <div class="programm__part">
-                                <div class="programm__names">
-                                    <h3 class="programm__name">Обучающие сессии группы УКРАИНА</h3>
-                                    <p class="programm__text"></p>
-                                </div>
-                                <div class="programm__info">
-                                    <h3 class="programm__titles">Level 1: конференц-залы</h3>
-                                    <p class="programm__about">Объединенный зал:</p>
-                                    <p class="programm__about">Carnation, Chia и Arfaj</p>
-
-                                    <span class="programm__line"></span>
-                                </div>
-                            </div>
-
-                            <div class="programm__part">
-                                <div class="programm__names">
-                                    <h3 class="programm__name">Обучающие сессии группы из стран СНГ</h3>
-                                    <p class="programm__text"></p>
-                                </div>
-                                <div class="programm__info">
-                                    <h3 class="programm__titles">отель V</h3>
-                                    <p class="programm__about">Зал Amazing (Grate), расположенный на 4 этаже</p>
-
-
-                                    <span class="programm__line"></span>
-                                </div>
-                            </div>
-
-                        </div>
                         
-
-                        
-                        <div class="programm__block " data-id="4">
-                            <div class="programm__part">
-                                <div class="programm__names">
-                                    <h3 class="programm__name">Обучающие сессии медицинских представителей</h3>
-                                    <p class="programm__text"></p>
-                                </div>
-                                <div class="programm__info">
-                                    <h3 class="programm__titles">Ground Floor: зона основных залов</h3>
-                                    <div class="programm__more">
-                                        <p class="programm__infos">Ballroom A</p>
-                                        <p class="programm__infos">УВМП</p>
-                                    </div>
-                                    <div class="programm__more">
-                                        <p class="programm__infos">Ballroom А</p>
-                                        <p class="programm__infos">ВМП Л1</p>
-                                    </div>
-                                    <div class="programm__more">
-                                        <p class="programm__infos">Ballroom B</p>
-                                        <p class="programm__infos">АПМ</p>
-                                    </div>
-                                    <div class="programm__more">
-                                        <p class="programm__infos">Ballroom C</p>
-                                        <p class="programm__infos">ВМП Л2</p>
-                                    </div>
-
-                                    <span class="programm__line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                </div>
-                            </div>
-
-                            <div class="programm__part">
-                                <div class="programm__names">
-                                    <h3 class="programm__name">Обучающие сессии групп: СП, сети, коммерческий отдел</h3>
-                                    <p class="programm__text"></p>
-                                </div>
-                                <div class="programm__info">
-                                    <h3 class="programm__titles">Level 2: конференц-залы</h3>
-                                    <div class="programm__more">
-                                        <p class="programm__infos">Iris + Lily</p>
-                                        <p class="programm__infos">Специалисты по продукту</p>
-                                    </div>
-                                    <div class="programm__more">
-                                        <p class="programm__infos">Malva + Magnolia</p>
-                                        <p class="programm__infos">Отдел по работе с сетями</p>
-                                    </div>
-                                    <div class="programm__more">
-                                        <p class="programm__infos">Lotus</p>
-                                        <p class="programm__infos">Коммерческий отдел</p>
-                                    </div>
-
-                                    <span class="programm__line"></span>
-                                </div>
-                            </div>
-
-                            <div class="programm__part">
-                                <div class="programm__names">
-                                    <h3 class="programm__name">Обучающие сессии группы УКРАИНА</h3>
-                                    <p class="programm__text"></p>
-                                </div>
-                                <div class="programm__info">
-                                    <h3 class="programm__titles">Level 1: конференц-залы</h3>
-                                    <p class="programm__about">Объединенный зал:</p>
-                                    <p class="programm__about">Carnation, Chia и Arfaj</p>
-
-                                    <span class="programm__line"></span>
-                                </div>
-                            </div>
-
-                            <div class="programm__part">
-                                <div class="programm__names">
-                                    <h3 class="programm__name">Обучающие сессии группы из стран СНГ</h3>
-                                    <p class="programm__text"></p>
-                                </div>
-                                <div class="programm__info">
-                                    <h3 class="programm__titles">отель V</h3>
-                                    <p class="programm__about">Зал Amazing (Grate), расположенный на 4 этаже</p>
-
-
-                                    <span class="programm__line"></span>
-                                </div>
-                            </div>
-
-                        </div>
-                        
-
-                        
-                        <div class="programm__block " data-id="5">
-                            <div class="programm__part">
-                                <div class="programm__names">
-                                    <h3 class="programm__name">Обучающие сессии группы УКРАИНА</h3>
-                                    <p class="programm__text"></p>
-                                </div>
-                                <div class="programm__info">
-                                    <h3 class="programm__titles">Level 1: конференц-залы</h3>
-                                    <p class="programm__about">Объединенный зал: Carnation, Chia и Arfaj</p>
-                                    
-
-                                    <span class="programm__line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                </div>
-                            </div>
-
-                            <div class="programm__part">
-                                <div class="programm__names">
-                                    <h3 class="programm__name">Обучающие сессии группы из стран СНГ</h3>
-                                    <p class="programm__text"></p>
-                                </div>
-                                <div class="programm__info">
-                                    <h3 class="programm__titles">отель V</h3>
-                                    <p class="programm__about">Зал Amazing (Grate), расположенный на 4 этаже</p>
-
-
-                                    <span class="programm__line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- ONE BLOCK ========= -->
                     </div>
                 </div>
+                
             </section>
             <!-- ПРОГРАММА ============== -->
              <img src="image/bckg2.png" alt="" class="block__bckg-left ">
@@ -556,13 +364,25 @@
                     <div class="guest__block">
                         <div class="guest__info">
                             <p class="guest__text">— это перспективный, а главное, беспрецедентно уникальный проект, состоящий из авторов исполнителей Маши Зайцевой и Маши Шейх. Девушки громко заявили о себе с пронзительной песней БОСАЯ которая молниеносно стала расходиться по просторам социальных сетей и набрала уже более 188 миллионов просмотров на YouTube, не покидает топ-чарты Apple Music и получила престижную премию «Золотой Граммофон» на Русском радио.</p>
-                            <button class="button guest-button-desktop" id="button-popup-zayceva2"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more">Подробнее</button>
+                             <div class="button-container">
+                                 <img src="image/img-more-button.svg" alt="More button img" class="button__img-more">
+                                 <button class="button guest-button-desktop" id="button-popup-zayceva2" data-text="Подробнее">
+                                Подробнее</button>
+                             </div>
+                            
                             <span class="guest__line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                         </div>
                         <div class="guest__names">
-                            <img src="image/zaceva.jpg" alt="Маша Зайцева" class="guest__image">
+                           <div class="guest__image-container">
+                               <img src="image/zaceva.jpg" alt="Маша Зайцева" class="guest__image">
+                           </div>
+                            
                             <h3 class="guest__name">Маша<br>Зайцева</h3>
-                            <button class="button guest-button-mobile" id="button-popup-zayceva"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more">Подробнее</button>
+                            <div class="button-container-mobile">
+                               <img src="image/img-more-button.svg" alt="More button img" class="button__img-more" >
+                                <button class="button guest-button-mobile" id="button-popup-zayceva" data-text="Подробнее">
+                                    Подробнее</button>
+                                </div>
                         </div>
                     </div>
                     
@@ -587,14 +407,25 @@
                     <div class="guest__block">
 
                         <div class="guest__names">
-                            <img src="image/sheih.jpg" alt="Маша Шейх" class="guest__image">
+                            <div class="guest__image-container">
+                                <img src="image/sheih.jpg" alt="Маша Шейх" class="guest__image">
+                            </div>
+                            
                             <h3 class="guest__name">Маша<br>Шейх</h3>
-                            <button class="button guest-button-mobile" id="button-popup-sheih"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more">Подробнее</button>
+                            <div class="button-container-mobile">
+                                <img src="image/img-more-button.svg" alt="More button img" class="button__img-more">
+                                <button class="button guest-button-mobile" id="button-popup-sheih" data-text="Подробнее">Подробнее</button>
+                            </div>
                             
                         </div>
                         <div class="guest__info">
                             <p class="guest__text">Песня с последнего альбома «Мама, я танцую» спровоцировала в интернете настоящий флэшмоб с танцами под зажигательные ритмы, а клип был снят в Боснии и Герцеговине в лучших традициях настоящего кино в духе Эмира Кустурицы и набрал уже более 117 миллионов просмотров на Youtube.</p>
-                            <button class="button guest-button-desktop" id="button-popup-sheih2"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more">Подробнее</button>
+                            
+                            <div class="button-container">
+                               <img src="image/img-more-button.svg" alt="More button img" class="button__img-more">
+                                <button class="button guest-button-desktop" id="button-popup-sheih2" data-text="Подробнее">
+                                    Подробнее</button>
+                            </div>
                             <span class="guest__line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                         </div>
                     </div>
@@ -618,7 +449,11 @@
                             <div class="info__names">
                                
                                 <h3 class="info__name">Информация по&nbsp;Цикловому совещанию.pdf</h3>
-                                <a class="button" href="files/obshaya-pamyatka-2.pdf" target="_blank"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more">Скачать</a>
+                                <div class="button-container">
+                                    <img src="image/img-more-button.svg" alt="More button img" class="button__img-more">
+                                    <a class="button" href="files/obshaya-pamyatka-2.pdf" target="_blank" data-text="Скачать">Скачать</a>
+                                </div>
+                                
                             </div>
                             
                         </div>
@@ -627,7 +462,11 @@
                            <div class="info__names">
                               
                                <h3 class="info__name">Памятка по&nbsp;ОАЭ.pdf</h3>
-                               <a class="button" href="files/pamiatka-po-prebivaniu-v-otele.pdf" target="_blank"><img src="image/img-more-button.svg" alt="More button img" class="button__img-more">Скачать</a>
+                               
+                               <div class="button-container">
+                                  <img src="image/img-more-button.svg" alt="More button img" class="button__img-more">
+                                   <a class="button" href="files/pamiatka-po-prebivaniu-v-otele.pdf" target="_blank" data-text="Скачать">Скачать</a>
+                               </div>
                             </div>
                             
                         </div>
@@ -647,7 +486,7 @@
                         <h3 class="place__hotel">HILTON DUBAI AL HABTOOR CITY</h3>
                         <a href="tel:+97144373333" class="place__phone2">+971-4-437-33-33</a>
                         <span class="place__line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                        <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x3e5f69dba4b8bc19:0x817067b2e7866b05?source=g.page.share" style="text-decoration: none;" target="_blank"><img src="image/map.png" alt="Map" class="place__map"></a>
+                        <a class="place__map-container" href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x3e5f69dba4b8bc19:0x817067b2e7866b05?source=g.page.share" style="text-decoration: none;" target="_blank"><img src="image/map.png" alt="Map" class="place__map"></a>
                         
                     </div>
                     <div class="place__infos">
@@ -780,7 +619,11 @@
                     </div>
                 <div class="contacts__lines">
                     <span class="contacts__main-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                <a href="#wrapper" class="button"><img src="image/img-close-button.svg" alt="Close button img" class="button__img-close">Перейти в начало</a>
+                
+                    <div class="button-container">
+                       <img src="image/img-close-button.svg" alt="Close button img" class="button__img-close">
+                        <a href="#wrapper" class="button" data-text="Перейти в начало">Перейти в начало</a>
+                    </div>    
                 </div>
                 </div>
                 
