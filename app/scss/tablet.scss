@@ -122,6 +122,7 @@ body {
             
         }
         &__link {
+            z-index: 25;
             position: relative;
             text-decoration: none;
             cursor: pointer;
@@ -135,6 +136,7 @@ body {
             letter-spacing: 0.2em;
             text-transform: uppercase;
             color: #54F5FF;
+            
         }
         &__mobile {
             z-index: 25;
@@ -866,6 +868,7 @@ body {
                 animation: glitch-skew 1s infinite linear alternate-reverse;
             }
             &::before{
+                z-index: 15;
                 content: attr(data-text);
                 // Duplicates our text with the mixin.
                 @include glitchCopy;
@@ -882,6 +885,7 @@ body {
                 animation: glitch-anim 5s infinite linear alternate-reverse;
             }
             &::after {
+                z-index: 14;
                 content: attr(data-text);
                 @include glitchCopy;
                 left: -8px;
