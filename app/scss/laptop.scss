@@ -928,6 +928,9 @@ body {
             display: flex;
             align-items: center;
         }
+        &-container-mobile {
+            display: none;
+        }
         &__img-more {
             width: 16px;
             height: 8px;
